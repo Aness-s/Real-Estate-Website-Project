@@ -1,0 +1,430 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+main {
+  font-family: "Heebo", sans-serif;
+}
+
+
+.landing {
+  min-height: 100vh;
+  background: url("backHouse.jpg");
+  background-size: cover; 
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 8vh;
+  background-color:  #c6d4ff;
+  border-style: solid;
+  border-color: white;
+  font-family: "Nunito";
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  list-style: none;
+}
+
+#logo {
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.burger{
+  display:none;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px; 
+  transition: all 0.3s ease;
+}
+
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+a:link {
+  color:   #1d2336;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1d2336;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c0a076;
+  text-decoration: none;
+}
+
+a:active {
+  color:   #1d2336;
+  text-decoration: none;
+}
+
+.big-text {
+  position: absolute;
+  top:  30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: 5rem;
+  font-family: "Lobster", cursive;
+  color:#b2c0e9;
+  visibility: visible;
+}
+
+.big-text-active{
+  visibility: hidden;
+  transform: translate(50px);
+}
+
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  background:#7599c9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.intro-text {
+  color: rgb(233, 233, 233);
+  font-family: "Heebo", sans-serif;
+  font-size: 3rem;
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+
+body {
+	font-family: "Heebo", sans-serif;
+  background-color: #8898ad ;
+
+}
+
+.names{
+  font-size: 22px;
+}
+
+.teams{
+  color:black;
+  font-size: 16px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.split-color{
+  color : black;
+  background-color: white;
+  
+
+}
+
+.team-picsLeft {
+  border-radius: 50%;
+  float: right; 
+  margin-left:35px; 
+  margin-bottom: 35px;  
+  height:350px;
+  width:300px;
+  
+}
+
+.team-picsRight {
+  border-radius: 50%;
+  float: left; 
+  margin-right:35px; 
+  margin-bottom: 35px;  
+  height:350;
+  width:300px;
+}
+
+.split{
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 16px;
+}
+
+
+#tours {
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tours tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+#tours tr:last-child td:last-child {
+  border-bottom-right-radius: 10px; 
+}
+
+#tours td, #tours th {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+}
+
+#tours tr:nth-child(even){
+  background-color: #f2f2f2; 
+}
+#tours tr:nth-child(odd){
+  background-color:  #ddd;
+}
+
+#tours tr:hover {background-color: rgb(176, 176, 177);}
+
+#tours th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:  #c6d4ff;
+
+  color: Black;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #c6d4ff;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0px;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #3c883f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #4a9c4e;
+}
+
+.container {
+  border-radius: 5px;
+  margin: auto;
+  width:60%;
+  
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.titlecardTour{
+  text-align: center;
+  padding: 150px 65px;
+  background-image: url("tourInside.jpg");
+  background-color: #ECEEEC;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.titlecardTeam
+{
+    text-align: center;
+    padding: 150px 65px;
+    background-image: url("team.jpg");
+    background-color: #ECEEEC;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+@media screen and (max-width:940px){
+  .nav-links {
+    width: 70%;
+  }
+
+  #tours {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x: hidden;
+  }
+  
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    background-color:  #c6d4ff;
+    align-items: center;
+    transform: translatex(100%);
+    width: 50%;
+    z-index: 1;
+  }
+
+  .nav-links li{
+    opacity: 0;
+  }
+
+  .burger{
+    display: block;
+  }
+
+  .nav-active{
+    transform: translatex(0%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .team-text{
+    visibility: hidden;
+  }
+
+  .team-picsLeft {
+    border-radius: 50%;
+    float: none; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;  
+    height:350px;
+    width:300px;
+  }
+
+  .team-picsRight {
+    border-radius: 50%;
+    float: none;  
+    margin-bottom: 20px;  
+    height:350;
+    width:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .names{
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .spaces{
+    display: none;
+  }
+
+  #tours {
+    font-size: 12px;
+  }
+  
+  .col-25, .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+}
+
+
+
+@keyframes navlinkFade{
+  from{
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+

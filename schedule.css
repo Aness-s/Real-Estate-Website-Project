@@ -1,0 +1,177 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+body {
+	font-family: "Heebo", sans-serif;
+  background-color: #8898ad ;
+  overflow-x: hidden;
+}
+
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 8vh;
+  background-color:  #c6d4ff;
+  border-style: solid;
+  border-color: white;
+  font-family: "Nunito";
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  list-style: none;
+}
+
+
+.titlecard {
+    text-align: center;
+    padding: 150px 65px;
+    background-image: url(https://gocitywide.com/wp-content/uploads/2017/01/banner-businessmodel.jpg);
+    background-color: #ECEEEC;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.pics {
+    border-radius: 50%;
+    margin-left: 35px;
+    margin-bottom: 35px;
+    height: 350px;
+    width: 300px;
+}
+
+#logo {
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.burger{
+  display:none;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px; 
+  transition: all 0.3s ease;
+}
+
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+a:link {
+  color:   #1d2336;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1d2336;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c0a076;
+  text-decoration: none;
+}
+
+a:active {
+  color:   #1d2336;
+  text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width:940px){
+  .nav-links {
+    width: 70%;
+  }
+
+  #tours {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x: hidden;
+  }
+  
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    background-color:  #c6d4ff;
+    align-items: center;
+    transform: translatex(100%);
+    width: 50%;
+    z-index: 1;
+  }
+
+  .nav-links li{
+    opacity: 0;
+  }
+
+  .burger{
+    display: block;
+  }
+
+  .nav-active{
+    transform: translatex(0%);
+    transition: transform 0.5s ease-in;
+  }
+  
+}
+
+
+
+@keyframes navlinkFade{
+  from{
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+
+
